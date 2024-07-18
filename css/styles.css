@@ -22,22 +22,18 @@
 
 /* header section start */
 
-header {
+
+#banner-content {
     width: 100%;
     height: 100vh;
+    /* border: 1px solid red; */
     margin: 0 auto;
     background: linear-gradient(180deg, rgb(30, 30, 30),rgba(40, 40, 40, 0.85),rgb(30, 30, 30) 100%);
 }
 
-#banner-content {
-    width: 85%;
-    height: 100%;
-    /* border: 1px solid red; */
-    margin: 0 auto;
-}
-
 #navbar {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: 15%;
     display: flex;
     justify-content: space-between;
@@ -53,7 +49,7 @@ header {
     gap: 1.7rem;
     border: 1px solid rgba(255, 255, 255, 0.276);
     border-radius: 5rem;
-    padding: 0.42rem 0.18rem;
+    padding: 0.42rem 0.19rem;
 }
 
 #navlist ul li, a {
@@ -78,8 +74,16 @@ header {
     font-weight: 600;
 }
 
+#toggle-bar {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 #banner {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: 85%;
     display: flex;
     justify-content: center;
@@ -199,3 +203,74 @@ header {
 }
 
 /* header section end */
+
+
+
+
+
+/* responsive for mobile */
+
+@media only screen and (max-width: 576px) {
+    #navlist {
+        display: none;
+    }
+    #toggle-bar {
+        display: block;
+    }
+    #banner-content {
+        width: 100%;
+        background: linear-gradient(180deg, rgb(30, 30, 30),rgba(40, 40, 40, 0.85),rgb(30, 30, 30) 100%);
+        height: auto;
+    }
+    #banner {
+        flex-direction: column;
+    }
+    #banner-det {
+        width: 100%;
+        height: 60vh;
+        justify-content: center;
+    }
+    #banner-det h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    #banner-det p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    #btn-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.9rem;
+    }
+    #btn-div button {
+        width: 47%;
+        padding: 0.6rem 0.8rem;
+    }
+    #banner-img {
+        width: 100%;
+        height: 70vh;
+    }
+    #banner-img img {
+        width: 60%;
+        height: 100%;
+    }
+    #mini-card1, #mini-card2 {
+        width: 30%;
+    }
+    #mini-card1 {
+        left: 22%;
+        top: 60%;
+    }
+    #mini-card2 {
+        left: 65%;
+        top: 10%;
+    }
+    #card-txt p {
+        font-size: 0.6rem;
+    }
+    #mini-card2 p {
+        font-size: 0.6rem;
+    }
+}
