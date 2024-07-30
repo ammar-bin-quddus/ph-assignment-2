@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 
-/* 
-    responsive breakpoints:
-        Small device: upto 576 px 
-        Medium Device: 576px to 992 px 
-        Large Device: above 993 px 
-*/
+
 
 :root {
     --p-color: rgba(255, 255, 255, 0.669);
@@ -18,6 +13,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #000;
+    margin: 0 auto;
 }
 
 /* header section start */
@@ -88,7 +88,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 15rem; */
 }
 
 #banner-det {
@@ -191,6 +190,7 @@
     color: var(--p-color);
     outline: none;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 #btn-div button:nth-child(1) {
@@ -204,13 +204,603 @@
 
 /* header section end */
 
+/* main part section 1 start */
+
+#habits {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #000;
+}
+
+#habits-title {
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#habits-title p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+}
+
+#habits-title h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#habits-cards {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card img {
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+}
+
+.card p {
+    color: var(--p-color);
+    font-size: 0.8rem;
+    width: 60%;
+}
 
 
+/* main part section 1 end */
+
+/* main part section 2 start */
+
+#run {
+    width: 100%;
+    height: 70vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #000;
+}
+
+#run-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+#run-det {
+    width: 60%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#run-det h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#run-det p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+    width: 60%;
+}
+
+#run-det button {
+    width: 20%;
+    padding: 0.6rem 0.9rem;
+    border-radius: 50px;
+    background-color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    color: var(--p-color);
+    cursor: pointer;
+}
+
+#run-img {
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/run.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    background-blend-mode: overlay;
+}
+
+/* main part section 2 end */
+
+/* special section start */
+
+#exercise {
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #000;
+}
+
+#exercise-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#exercise-title h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#exercise-container {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+#progress-bar {
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#bar {
+    position: relative;
+    width: 40%;
+    height: 65%;
+    border-radius: 50%;
+    background: conic-gradient(#e6533c 108deg, #fff 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar span {
+    color: white;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#bar::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #222222;
+}
+
+#progress-det {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+#progress-det > p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+#progress-p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.det-card {
+    width: 50%;
+    height: 15%;
+    background: bisque;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0.7rem;
+}
+
+.num {
+    font-size: 1.2rem;
+    color: rgb(8, 56, 75);
+    font-weight: bolder;
+}
+
+#exercise-info {
+    width: 45%;
+    height: 100%;
+}
+
+
+/* special section end */
+
+/* main part section 3 start */
+
+#bmi {
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #000;
+}
+
+#bmi-content {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+}
+
+#bmi-title {
+    background-color: #000;
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+#bmi-title h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#bmi-title p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+}
+
+#bmi-container {
+    width: 90%;
+    height: 75%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+}
+
+#bmi-chart {
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#bmi-chart table {
+    border-collapse: collapse;
+}
+
+#bmi-chart table td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 1rem;
+    color: var(--p-color);
+}
+
+#bmi-chart table thead td {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+#bmi-chart h2 {
+    color: white;
+}
+
+#calc-bmi {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#bmi-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+#grid-inpt {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#select {
+    width: 80%;
+    padding: 0.6rem 0.9rem;
+    background-color: #ebd8d81b;
+    border: 1px solid #ebd8d81b;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#calc-bmi button {
+    width: 25%;
+    background: var(--btn-color);
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--btn-color);
+    border-radius: 50px;
+    color: var(--p-color);
+    cursor: pointer;
+}
+
+.inpt-bmi {
+    padding: 0.6rem 0.9rem;
+    background-color: #ebd8d81b;
+    border: 1px solid #ebd8d81b;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#calc-bmi h2 {
+    color: white;
+}
+#calc-bmi p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+    width: 60%;
+}
+
+/* main part section 3 end */
+
+/* main part section 4 start */
+
+#team {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #000;
+}
+
+#team-container {
+    width: 100%;
+    height: 100%;
+}
+
+#team-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    text-align: center;
+}
+#team-title h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#team-title p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+}
+
+#team-album {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-color: #222222;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+}
+.pic-det {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    z-index: 2;
+    color: var(--p-color);
+}
+
+.pic-det p:nth-child(1) {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* main part section 4 end */
+
+/* footer section start */
+
+#footer-container {
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #222222;
+}
+
+#about {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--p-color);
+}
+
+#div1 {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #e6533c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#div1 h1 {
+    color: #e6533c;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#div1 p {
+    color: var(--p-color);
+    font-size: 0.9rem;
+    width: 70%;
+    font-weight: 100;
+}
+
+.about-div {
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid #e6533c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-div > p {
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
+
+.gs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.gs p {
+    color: var(--p-color);
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#all-right {
+    width: 90%;
+    height: 25%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--p-color);
+    font-size: 1.2rem;
+}
+
+
+
+/* footer section end */
+
+
+/* 
+    responsive breakpoints:
+        Small device: upto 576 px 
+        Medium Device: 576px to 992 px 
+        Large Device: above 993 px 
+*/
 
 
 /* responsive for mobile */
 
 @media only screen and (max-width: 576px) {
+    /* header part */
     #navlist {
         display: none;
     }
@@ -250,7 +840,7 @@
     }
     #banner-img {
         width: 100%;
-        height: 70vh;
+        height: 80vh;
     }
     #banner-img img {
         width: 60%;
@@ -272,5 +862,202 @@
     }
     #mini-card2 p {
         font-size: 0.6rem;
+    }
+
+    /* header part end */
+
+    /* section 1 */
+
+    #habits-cards {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    #habits {
+        height: auto;
+    }
+    #habits-title {
+        width: 90%;
+    }
+    .card img {
+        width: 80%;
+    }
+
+    /* section 1 end */
+
+    /* section 2 */
+
+    #run {
+        height: auto;
+    }
+    #run-container {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+    #run-det {
+        width: 100%;
+        height: 50%;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    #run-det h2 {
+        font-size: 2rem;
+        
+    }
+    #run-det p {
+        width: 100%;
+    }
+    #run-det button {
+        width: 50%;
+    }
+    #run-img {
+       width: 100%;
+       height: 50%;
+    }
+
+    /* section 2 end */
+
+    /* section 3 start */
+
+    #bmi {
+        width: 100%;
+        height: auto;
+    }
+    #bmi-title {
+        padding: 1.5rem 0;
+    }
+    #bmi-title h2 {
+        font-size: 1.5rem;
+    }
+    #bmi-title p {
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    #bmi-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    #bmi-chart {
+        width: 100%;
+    }
+    #calc-bmi {
+        width: 100%;
+    }
+    #calc-bmi p {
+        width: 100%;
+    }
+    #calc-bmi h2, #bmi-chart h2 {
+        font-size: 1.3rem;
+    }
+    #select {
+        width: 100%;
+    }
+    #grid-inpt {
+        width: 100%;
+        gap: 0.8rem;
+        grid-template-columns: repeat(2, calc(50% - 0.4rem));
+    }
+    #calc-bmi button {
+        width: 35%;
+    }
+
+    /* section 3 end */
+
+    /* section 4 start */
+    #team {
+        width: 100%;
+        height: auto;
+    }
+
+    #team-container {
+        width: 100%;
+        height: auto;
+    }
+    #team-title {
+        padding: 1.5rem 0;
+    }
+    #team-album {
+        height: 300vh;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* section 4 end */
+    
+    /* footer section start */
+
+    #footer-container {
+        height: auto;
+    }
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 1rem;
+    }
+    #div1 {
+        width: 100%;
+    }
+    .about-div {
+        width: 100%;
+    }
+    #all-right {
+        padding: 1rem 0;
+    }
+
+    /* footer section end */
+}
+
+/* responsive for desktop */
+
+@media only screen and (min-width: 993px) and (max-width: 1240px) {
+    #banner-det h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 3rem;
+    }
+    #btn-div button {
+        width: 32%;
+    }
+    #run-det {
+        gap: 2rem;
+    }
+    #run-det h2 {
+        font-size: 2.5rem;
+    }
+    #bmi {
+        height: 100vh;
+    }
+    #bmi-chart {
+        gap: 1rem;
+    }
+    #calc-bmi {
+        gap: 1rem;
+    }
+    #grid-inpt {
+        width: 100%;
+    }
+    #select {
+        width: 100%;
+    }
+    #div1 {
+        gap: 1.5rem;
+    }
+    #div1 h1 {
+        font-size: 2.5rem;
+    }
+    .about-div {
+        gap: 1.5rem;
+    }
+    .about-div > p {
+        font-size: 1.6rem;
+    }
+    .gs {
+        gap: 1rem;
+    }
+    .gs p {
+        font-size: 1rem;
     }
 }
