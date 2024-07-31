@@ -469,6 +469,10 @@ body {
     padding: 1rem 0.7rem;
 }
 
+.det-title {
+    font-weight: bold;
+}
+
 .num {
     font-size: 1.2rem;
     color: rgb(8, 56, 75);
@@ -1044,6 +1048,65 @@ body {
     }
 
     /* section 2 end */
+
+    /* special section start */
+
+    #exercise {
+        height: auto;
+    }
+    #exercise-title {
+        padding-bottom: 1.1rem;
+    }
+    #exercise-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    #bar {
+        width: 55%;
+        height: 72%;
+    }
+    #progress-bar {
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+    }
+    #progress-det {
+        width: 100%;
+    }
+    .det-card {
+        width: 100%;
+        height: 30%;
+        padding: 0.5rem;
+    }
+    #calorie {
+        width: 100%;
+    }
+    #running {
+        padding: 0.5rem;
+    }
+    #runnig-title p:nth-child(1) {
+        font-size: 1rem;
+    }
+    #runnig-title p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    #running-bar p {
+        font-size: 0.8rem;
+    }
+    #cookie-det p:nth-child(1) {
+        font-size: 1rem;
+    }
+    #cookie-det p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    #cookie-det p:nth-child(3) {
+        font-size: 0.8rem;
+    }
+    #burn-calorie {
+        padding: 0.5rem;
+    }
+
+    /* special section end */
 
     /* section 3 start */
 
