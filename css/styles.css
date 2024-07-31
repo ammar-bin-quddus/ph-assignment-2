@@ -1218,6 +1218,27 @@ body {
     #run-det h2 {
         font-size: 2.5rem;
     }
+    .det-card {
+        width: 50%;
+        height: 19%;
+        padding: 1rem 0.7rem;
+    }
+    .det-card > p {
+        font-size: 0.9rem;
+    }
+    .num {
+        font-size: 1rem;
+    }
+    #runnig-title p:nth-child(1) {
+        font-size: 1rem;
+    }
+    
+    #runnig-title p:nth-child(2) {
+        font-size: 0.9rem;
+    }
+    #cookie-det p:nth-child(1) {
+        font-size: 1rem;
+    }
     #bmi {
         height: 100vh;
     }
